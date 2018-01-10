@@ -10,6 +10,13 @@ Example code produced while learning Rust from [rustbyexample](http://rustbyexam
 ```sh
 git clone https://github.com:rgaertner/rust-examples.git
 cd rust-examples
+```
+## run examples
+```sh
+cargo run --bin [name] # find available names via ls src/bin
+```
+## read the book locally
+```sh
 git submodule init
 cargo install mdbook
 mdbook serve rust-by-example # host rust-by-example on localhost:3000
