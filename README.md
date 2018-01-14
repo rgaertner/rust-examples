@@ -16,6 +16,9 @@ cd rust-examples
 cargo run --bin [name] # find available names via ls src/bin
 ```
 ## read the book locally
+This just  works if you set the bin folder of the cargo installation to your $PATH.
+More details can be found in the book [The Rust Programming Language](https://doc.rust-lang.org/book/second-edition/ch14-04-installing-binaries.html) 
+
 ```sh
 git submodule init
 cargo install mdbook
