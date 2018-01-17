@@ -31,9 +31,11 @@ fn main() {
     let sum = parsed + turbo_parsed;
     println!{"Sum: {:?}", sum};
 
-    let circle2 = Circle::from_str("radius: 4");
-    println!("{}", circle2.unwrap().to_string());
+    // we got an implementation for from_str, so try to parse from a str
+    let circle2 = "radius: 4".parse::<Circle>().unwrap();
+    println!("{}", circle2.to_string());
 
+    // see what happens in the error case
     let circle3 = Circle::from_str("Radius: 4");
     println!("{}", circle3.unwrap().to_string());
 }
