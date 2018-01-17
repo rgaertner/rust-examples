@@ -26,6 +26,8 @@ fn main() {
     println!("1000 as a u8 is : {}", 1000 as u8);
     // -1 + 256 = 255
     println!(" -1 as a u8 is : {}", (-1_i8) as u8);
+    // plainly said the same pattern interpreted with a signum and without
+    println!("u {} vs. s {}", 0b1111_1111, 0b1111_1111 as i8);
 
     // for positive numbers, this is the same as the modulus
     println!("1000 mod 256 is : {}", 1000 % 256);
@@ -38,7 +40,6 @@ fn main() {
     println!(" 128 as a i16 is : {}", 128 as i16);
     // 128 as u8 -> 128, whose two's complement in eight bits is:
     println!(" 128 as a i8 is : {}", 128 as i8);
-    println!(" 128 as a i8 in binary: {}", 128 as i8);
     
     // repeating the example above
     // 1000 as u8 -> 232
@@ -46,5 +47,4 @@ fn main() {
     // and the two's complement of 232 is -24
     println!(" 232 as i8 is : {}", 232 as i8);
 
-    println!("u {} vs. s {}", 0b1111_1111, 0b1111_1111 as i8);
 }
