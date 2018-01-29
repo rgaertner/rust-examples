@@ -20,7 +20,13 @@ fn main() {
     let name = "Bob";
 
     match name {
-        n@ "Bob" | n@ "Frank" | n@ "Ferris" => println!("found {} in names", n),
-        n => println!("Dunno {}", n),
+        n@ "Bob" | n@ "Frank" | n@ "Ferris" => println!("found {} in names", n), n => println!("Dunno {}", n),
+    }
+
+    let pair = (1,2);
+
+    match pair {
+        n @(1,2) => println!("success"),
+        _ => println!("failure"),
     }
 }
